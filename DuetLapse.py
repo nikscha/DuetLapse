@@ -141,7 +141,6 @@ def init():
     if (not printer.printerType()):
         print('Device at '+duet+' either did not respond or is not a Duet V2 or V3 printer.')
         exit(2)
-    printer = DWA.DuetWebAPI('http://'+duet)
 
     print("Connected to a Duet V"+str(printer.printerType())+" printer at "+printer.baseURL())
 
